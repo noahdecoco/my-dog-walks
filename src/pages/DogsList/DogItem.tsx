@@ -93,7 +93,11 @@ export const DogItem = React.memo(
 
         <button
           className="ml-2 inline-block rounded-lg bg-green-600 p-4 text-center text-4xl font-bold tracking-wider text-white shadow-inner drop-shadow-md"
-          onClick={() => openGoogleMaps(dog.address)}
+          onClick={() =>
+            openGoogleMaps(
+              dog.parkingGeoLocation ? dog.parkingGeoLocation : dog.address
+            )
+          }
         >
           🚘
         </button>

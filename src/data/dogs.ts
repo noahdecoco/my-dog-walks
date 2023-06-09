@@ -12,6 +12,8 @@ export interface Dog {
   name: string;
   collarSize?: CollarSize;
   address: string;
+  parkingGeoLocation?: string;
+  leashToVan?: boolean;
 }
 
 export const data: Dog[] = [
@@ -71,10 +73,13 @@ export const data: Dog[] = [
   {
     name: "Balou",
     address: "Buiksloterdijk 308",
+    collarSize: CollarSize.LARGE,
+    parkingGeoLocation: "52.39962054006912, 4.920145340839681",
   },
   {
     name: "Bennie",
     address: "Leeuwarderweg 72",
+    collarSize: CollarSize.SMALL,
   },
   {
     name: "Bob & Betty",
@@ -99,6 +104,7 @@ export const data: Dog[] = [
   {
     name: "Boon",
     address: "H. Stolleplantsoen 7",
+    collarSize: CollarSize.LARGE,
   },
   {
     name: "Boyke",
@@ -115,6 +121,8 @@ export const data: Dog[] = [
   {
     name: "Cees",
     address: "Banne Buikslootlaan 109C",
+    collarSize: CollarSize.SMALL,
+    leashToVan: true,
   },
   {
     name: "Charlie K",
@@ -132,6 +140,7 @@ export const data: Dog[] = [
   {
     name: "Donna",
     address: "Bosrankstraat 10",
+    collarSize: CollarSize.MEDIUM,
   },
   {
     name: "Freek & Ted",
@@ -162,6 +171,7 @@ export const data: Dog[] = [
   {
     name: "Hugo",
     address: "Kogeldistelstraat 22",
+    collarSize: CollarSize.MEDIUM,
   },
   {
     name: "Ike",
@@ -170,6 +180,7 @@ export const data: Dog[] = [
   {
     name: "Inthi",
     address: "Amelandstraat 26",
+    collarSize: CollarSize.SMALL,
   },
   {
     name: "Jagger",
@@ -179,6 +190,7 @@ export const data: Dog[] = [
     name: "Jessie",
     address: "Nieuwendammerdijk 26",
     collarSize: CollarSize.MEDIUM,
+    parkingGeoLocation: "52.390507, 4.925234",
   },
   {
     name: "Kaat",
@@ -208,6 +220,7 @@ export const data: Dog[] = [
   {
     name: "Leela & Otje",
     address: "Ranonkelkade 7a",
+    collarSize: CollarSize.SMALL,
   },
   {
     name: "Lemmy",
@@ -238,6 +251,7 @@ export const data: Dog[] = [
   {
     name: "Luna K",
     address: "Schiermonnikoogstraat 15",
+    collarSize: CollarSize.TINY,
   },
   {
     name: "Marley",
@@ -289,10 +303,12 @@ export const data: Dog[] = [
   {
     name: "Pitou",
     address: "Blazerpad 19",
+    collarSize: CollarSize.MEDIUM,
   },
   {
     name: "Plien",
     address: "Binnenzagerij 10",
+    collarSize: CollarSize.MEDIUM,
   },
   {
     name: "Podi",
@@ -314,6 +330,7 @@ export const data: Dog[] = [
     name: "Quintus",
     address: "Nieuwe Purmerweg 152",
     collarSize: CollarSize.SMALL,
+    parkingGeoLocation: "52.39306255784903, 4.937961406200711",
   },
   {
     name: "Rifka",
@@ -332,6 +349,7 @@ export const data: Dog[] = [
   {
     name: "Sam L",
     address: "Schellingwouderdijk 319",
+    collarSize: CollarSize.MEDIUM,
   },
   {
     name: "Sancho",
@@ -360,6 +378,7 @@ export const data: Dog[] = [
   {
     name: "Ted",
     address: "Nieuwendammerdijk 333",
+    collarSize: CollarSize.LARGE,
   },
   {
     name: "Timo",
