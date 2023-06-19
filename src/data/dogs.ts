@@ -539,6 +539,11 @@ export const data: Dog[] = [
     address: "Johan Van Der Keukenstraat 79a",
   },
   {
+    name: "Warhol",
+    address: "Leen Jongewaardkade 9",
+    collarSize: CollarSize.MEDIUM,
+  },
+  {
     name: "Zoe",
     address: "Mattenbiesstraat 99",
   },

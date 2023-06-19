@@ -23,6 +23,10 @@ export const data: Park[] = [
     name: "DB",
     address: "Muiderstraatweg 61-66",
   },
+  {
+    name: "GB",
+    address: "52.3156390,5.1446019",
+  },
 ]
   .map((item) => ({ ...item, id: uniqueId("walk_") }))
   .sort((a, b) => a.name.localeCompare(b.name));
