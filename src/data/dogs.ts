@@ -7,9 +7,15 @@ export enum CollarSize {
   TINY = "XS",
 }
 
+export enum Breed {
+  LABRADOODLE = "Labradoodle",
+  CHIHUAHUA = "Chihuahua",
+}
+
 export interface Dog {
   id: string;
   name: string;
+  breed?: Breed;
   collarSize?: CollarSize;
   address: string;
   parkingGeoLocation?: string;
@@ -170,7 +176,7 @@ export const data: Dog[] = [
   },
   {
     name: "Hugo",
-    address: "Kogeldistelstraat 22",
+    address: "Driedistelstraat 17",
     collarSize: CollarSize.MEDIUM,
   },
   {
@@ -383,6 +389,8 @@ export const data: Dog[] = [
   {
     name: "Timo",
     address: "Ridderspoorweg 169",
+    collarSize: CollarSize.TINY,
+    breed: Breed.CHIHUAHUA,
   },
   {
     name: "Tobie",
@@ -395,10 +403,6 @@ export const data: Dog[] = [
   {
     name: "Twirre",
     address: "Fazantenweg 81H",
-  },
-  {
-    name: "Woody",
-    address: "Bercylaan 99",
   },
   {
     name: "Zuzu",
@@ -550,6 +554,67 @@ export const data: Dog[] = [
   {
     name: "Zorro & Ziggy",
     address: "Ben Van Meerendonkstraat 138",
+  },
+  {
+    name: "Otje J",
+    address: "Spadinalaan 87",
+    collarSize: CollarSize.SMALL,
+  },
+  {
+    name: "Lara C",
+    address: "Texelweg 64",
+    collarSize: CollarSize.MEDIUM,
+  },
+  {
+    name: "Sjors",
+    address: "Nieuwendammerdijk 97",
+    collarSize: CollarSize.SMALL,
+    parkingGeoLocation: "52.39189560297361, 4.928525890824903",
+  },
+  {
+    name: "Nelson",
+    address: "Grasweg 268",
+    collarSize: CollarSize.TINY,
+  },
+  {
+    name: "Ellie",
+    address: "Leen Jongewaardkade 43",
+    collarSize: CollarSize.MEDIUM,
+  },
+  {
+    name: "Bodhi",
+    address: "Mariadistelkade 67",
+    collarSize: CollarSize.LARGE,
+  },
+  {
+    name: "Kip",
+    address: "Ceramiquelaan 375",
+    collarSize: CollarSize.SMALL,
+  },
+  {
+    name: "Woody",
+    address: "Bercylaan 99",
+    collarSize: CollarSize.SMALL,
+  },
+  {
+    name: "Kobe",
+    address: "Bundlaan 228",
+    collarSize: CollarSize.SMALL,
+    breed: Breed.LABRADOODLE,
+  },
+  {
+    name: "Coco J",
+    address: "Spandinalaan 178",
+    collarSize: CollarSize.SMALL,
+    breed: Breed.LABRADOODLE,
+  },
+  {
+    name: "Bela & Mila",
+    address: "Uilenburgerwerf 6",
+  },
+  {
+    name: "Gimli",
+    address: "Overhoeksparklaan 218",
   },
 ]
   .map((item) => ({ ...item, id: uniqueId("dog_") }))
