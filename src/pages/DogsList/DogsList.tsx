@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Dog } from "../../data/dogs";
+import { Dog, Sex } from "../../data/dogs";
 import { DogItem } from "./DogItem";
 import { SearchBar } from "../FilterBar";
 
@@ -18,7 +18,13 @@ export const DogsList = ({ dogs }: { dogs: Dog[] }) => {
       <SearchBar onChange={handleOnChange} />
       {filteredData.map((dog) => (
         <DogItem
-          className="odd:bg-slate-100 even:bg-slate-200"
+          className={`${
+            dog.sex === Sex.FEMALE
+              ? "bg-pink-200"
+              : dog.sex === Sex.MALE
+              ? "bg-blue-200"
+              : "odd:bg-slate-200 even:bg-slate-100"
+          }`}
           key={dog.id}
           dog={dog}
         />

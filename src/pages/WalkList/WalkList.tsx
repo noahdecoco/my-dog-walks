@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Walk } from "../../App";
 import { WalkItem } from "./WalkItem";
-import { Dog } from "../../data/dogs";
+import { Dog, Sex } from "../../data/dogs";
 
 export const WalkList = ({ walk }: { walk: Walk }) => {
   const [dogList, setDogLIst] = useState([] as Dog[]);
@@ -46,7 +46,9 @@ export const WalkList = ({ walk }: { walk: Walk }) => {
             {dogList.map((dog) => {
               return (
                 <WalkItem
-                  className="odd:bg-slate-100 even:bg-slate-200"
+                  className={`${
+                    dog.sex === Sex.FEMALE ? "bg-pink-200" : "bg-blue-200"
+                  }`}
                   key={dog.id}
                   dog={dog}
                 />

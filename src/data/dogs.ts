@@ -7,17 +7,20 @@ export enum CollarSize {
   TINY = "XS",
 }
 
-export enum Breed {
-  LABRADOODLE = "Labradoodle",
-  CHIHUAHUA = "Chihuahua",
+export enum Sex {
+  MALE = "M",
+  FEMALE = "F",
 }
 
 export interface Dog {
   id: string;
   name: string;
-  breed?: Breed;
+  breed?: string;
+  sex?: Sex;
   collarSize?: CollarSize;
+  photo?: string;
   address: string;
+  address2?: string;
   parkingGeoLocation?: string;
   leashToVan?: boolean;
 }
@@ -27,6 +30,7 @@ export const data: Dog[] = [
     name: "Lara",
     address: "Kadoelenweg 220",
     collarSize: CollarSize.MEDIUM,
+    sex: Sex.FEMALE,
   },
   {
     name: "Pippe & Ollie",
@@ -104,8 +108,10 @@ export const data: Dog[] = [
     address: "Stoelenmatterspad 17",
   },
   {
-    name: "Boomer",
+    name: "Boomer ⚠️",
     address: "Badhuiskade 281",
+    collarSize: CollarSize.LARGE,
+    sex: Sex.MALE,
   },
   {
     name: "Boon",
@@ -114,6 +120,8 @@ export const data: Dog[] = [
   },
   {
     name: "Boyke",
+    collarSize: CollarSize.SMALL,
+    sex: Sex.MALE,
     address: "Leeuwarderweg 54",
   },
   {
@@ -178,6 +186,7 @@ export const data: Dog[] = [
     name: "Hugo",
     address: "Driedistelstraat 17",
     collarSize: CollarSize.MEDIUM,
+    sex: Sex.MALE,
   },
   {
     name: "Ike",
@@ -197,6 +206,7 @@ export const data: Dog[] = [
     address: "Nieuwendammerdijk 26",
     collarSize: CollarSize.MEDIUM,
     parkingGeoLocation: "52.390507, 4.925234",
+    sex: Sex.FEMALE,
   },
   {
     name: "Kaat",
@@ -212,6 +222,8 @@ export const data: Dog[] = [
   },
   {
     name: "Kick",
+    sex: Sex.MALE,
+    collarSize: CollarSize.LARGE,
     address: "Paterspoel 32",
   },
   {
@@ -315,6 +327,7 @@ export const data: Dog[] = [
     name: "Plien",
     address: "Binnenzagerij 10",
     collarSize: CollarSize.MEDIUM,
+    sex: Sex.FEMALE,
   },
   {
     name: "Podi",
@@ -336,6 +349,7 @@ export const data: Dog[] = [
     name: "Quintus",
     address: "Nieuwe Purmerweg 152",
     collarSize: CollarSize.SMALL,
+    sex: Sex.MALE,
     parkingGeoLocation: "52.39306255784903, 4.937961406200711",
   },
   {
@@ -345,7 +359,9 @@ export const data: Dog[] = [
   },
   {
     name: "Rita",
-    address: "Kleine Zonneplein 1",
+    address: "Jacob honingstraat 45",
+    collarSize: CollarSize.MEDIUM,
+    sex: Sex.FEMALE,
   },
 
   {
@@ -389,12 +405,20 @@ export const data: Dog[] = [
   {
     name: "Timo",
     address: "Ridderspoorweg 169",
+    address2: "Amsterdam",
     collarSize: CollarSize.TINY,
-    breed: Breed.CHIHUAHUA,
+    breed: "Chihuahua",
+    photo: "timo.png",
   },
   {
     name: "Tobie",
     address: "Westerlengte 51",
+  },
+  {
+    name: "Toby ⚠️",
+    address: "IJburglaan 982",
+    collarSize: CollarSize.MEDIUM,
+    breed: "Labradoodle",
   },
   {
     name: "Tony L",
@@ -419,6 +443,8 @@ export const data: Dog[] = [
   {
     name: "Beike",
     address: "Dennenhof 3",
+    collarSize: CollarSize.MEDIUM,
+    sex: Sex.FEMALE,
   },
   {
     name: "Bikkel",
@@ -457,10 +483,6 @@ export const data: Dog[] = [
     address: "Kees Broekmanstraat 80",
   },
   {
-    name: "Jack",
-    address: "Talbotstraat 12",
-  },
-  {
     name: "Joep",
     address: "Cas Oorthuyskade 194",
   },
@@ -475,19 +497,26 @@ export const data: Dog[] = [
   {
     name: "Kenna",
     address: "Jan Vrijmanstraat 228",
+    collarSize: CollarSize.LARGE,
+    sex: Sex.FEMALE,
   },
   {
     name: "Lotje",
     address: "Nico Jessekade 225",
+    collarSize: CollarSize.LARGE,
+    sex: Sex.FEMALE,
   },
   {
     name: "Louie",
     address: "Emmy Andriessestraat 50",
+    collarSize: CollarSize.MEDIUM,
+    sex: Sex.FEMALE,
   },
   {
     name: "Lucky",
     address: "Windjammerdijk 82",
     collarSize: CollarSize.SMALL,
+    sex: Sex.FEMALE,
   },
   {
     name: "Max",
@@ -569,6 +598,7 @@ export const data: Dog[] = [
     name: "Sjors",
     address: "Nieuwendammerdijk 97",
     collarSize: CollarSize.SMALL,
+    sex: Sex.FEMALE,
     parkingGeoLocation: "52.39189560297361, 4.928525890824903",
   },
   {
@@ -585,6 +615,7 @@ export const data: Dog[] = [
     name: "Bodhi",
     address: "Mariadistelkade 67",
     collarSize: CollarSize.LARGE,
+    sex: Sex.MALE,
   },
   {
     name: "Kip",
@@ -600,13 +631,13 @@ export const data: Dog[] = [
     name: "Kobe",
     address: "Bundlaan 228",
     collarSize: CollarSize.SMALL,
-    breed: Breed.LABRADOODLE,
+    breed: "Labradoodle",
   },
   {
     name: "Coco J",
     address: "Spandinalaan 178",
     collarSize: CollarSize.SMALL,
-    breed: Breed.LABRADOODLE,
+    breed: "Labradoodle",
   },
   {
     name: "Bela & Mila",
@@ -615,6 +646,72 @@ export const data: Dog[] = [
   {
     name: "Gimli",
     address: "Overhoeksparklaan 218",
+  },
+  {
+    name: "Bob ⚠️",
+    sex: Sex.MALE,
+    collarSize: CollarSize.LARGE,
+    address: "Diopter 182",
+  },
+  {
+    name: "Jack",
+    address: "Talbotstraat 12",
+    collarSize: CollarSize.LARGE,
+    sex: Sex.MALE,
+  },
+  {
+    name: "Keetje ⚠️",
+    address: "Buiksloterdijk 394",
+    collarSize: CollarSize.SMALL,
+    sex: Sex.FEMALE,
+  },
+  {
+    name: "Frankie F",
+    collarSize: CollarSize.MEDIUM,
+    sex: Sex.FEMALE,
+    address: "Amerbos 391",
+  },
+  {
+    name: "Odie 3012",
+    address: "Ms Van Riemsdijkweg 47",
+  },
+  {
+    name: "Lasse",
+    address: "Hoopende Swaen 36",
+  },
+  {
+    name: "Loetje L",
+    address: "Nico Jessekade 147",
+  },
+  {
+    name: "Ollie S",
+    address: "Taconiskade 25",
+  },
+  {
+    name: "Skye & Mo",
+    address: "Ceramiquelaan 317",
+  },
+  {
+    name: "Freddie",
+    address: "Ijburglaan 356",
+  },
+  {
+    name: "Bello",
+    address: "Nico Jessekade 157",
+    breed: "Labrador",
+  },
+  {
+    name: "Freya T",
+    address: "Landsmeerderdijk 14",
+  },
+  {
+    name: "Pippa G",
+    address: "Leeuwarderweg 36",
+  },
+  {
+    name: "Joey",
+    address: "Zwanebloemlaan 66",
+    breed: "Jack Russel",
   },
 ]
   .map((item) => ({ ...item, id: uniqueId("dog_") }))

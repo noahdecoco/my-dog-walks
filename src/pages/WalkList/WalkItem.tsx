@@ -47,20 +47,31 @@ export const WalkItem = ({
   );
 
   return (
-    <div className={`flex border-b-2 px-4 py-6 ${className}`}>
+    <div className={`flex border-b-2 px-2 py-4 ${className}`}>
+      {dog.photo && (
+        <img
+          className="mr-2 h-20 w-20 rounded-full drop-shadow-md"
+          src={`https://noahdecoco.com/my-dog-walks/photos/${dog.photo}`}
+          alt=""
+        />
+      )}
       <div className="flex-1">
         <div className="flex items-center">
+          <span className="mr-2 text-2xl font-semibold">{dog.name}</span>|
           {dog.collarSize && (
-            <span className="text-md mr-2 inline-block h-8 w-8 rounded-full bg-red-900 text-center font-bold uppercase leading-8 text-white">
+            <span className="ml-2 text-center text-xl uppercase">
               {dog.collarSize}
             </span>
           )}
-          <span className="text-3xl font-semibold">{dog.name}</span>
         </div>
-        <span className="text-lg">{dog.address}</span>
+        <p className="text-md">
+          {dog.address}
+          <br />
+          {dog.address2}
+        </p>
       </div>
 
-      <div className="space-between flex hidden flex-col justify-between	space-y-4">
+      <div className="space-between flex hidden flex-col justify-between space-y-2">
         <div>
           <input
             type="checkbox"
@@ -71,7 +82,7 @@ export const WalkItem = ({
           />
           <label
             htmlFor={`${dog.id}-morning-walk-checkbox`}
-            className="text-4xl opacity-20 drop-shadow-md peer-checked:opacity-100"
+            className="text-3xl opacity-20 drop-shadow-md peer-checked:opacity-100"
           >
             🕥
           </label>
@@ -87,7 +98,7 @@ export const WalkItem = ({
           />
           <label
             htmlFor={`${dog.id}-afternoon-walk-checkbox`}
-            className="text-4xl opacity-20 drop-shadow-md peer-checked:opacity-100"
+            className="text-3xl opacity-20 drop-shadow-md peer-checked:opacity-100"
           >
             🕝
           </label>
@@ -95,8 +106,12 @@ export const WalkItem = ({
       </div>
 
       <button
-        className="ml-2 inline-block rounded-lg bg-green-600 p-4 text-center text-4xl font-bold tracking-wider text-white shadow-inner drop-shadow-md"
-        onClick={() => openGoogleMaps(dog.address)}
+        className="ml-2 inline-block h-20 w-20 rounded-lg bg-green-600 p-4 text-center text-4xl font-bold tracking-wider text-white shadow-inner drop-shadow-md"
+        onClick={() =>
+          openGoogleMaps(
+            dog.parkingGeoLocation ? dog.parkingGeoLocation : dog.address
+          )
+        }
       >
         🚘
       </button>
