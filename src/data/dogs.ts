@@ -202,7 +202,7 @@ export const data: Dog[] = [
     address: "Distelweg 48",
   },
   {
-    name: "Jessie",
+    name: "Jessie ⚠️",
     address: "Nieuwendammerdijk 26",
     collarSize: CollarSize.MEDIUM,
     parkingGeoLocation: "52.390507, 4.925234",
@@ -295,6 +295,14 @@ export const data: Dog[] = [
   {
     name: "Nox",
     address: "Ananasplein 4",
+  },
+  {
+    name: "Nana",
+    address: "Het Dok 11",
+  },
+  {
+    name: "Nana*",
+    address: "Van Der Pekstraat 72",
   },
   {
     name: "Ollie G",
@@ -624,7 +632,7 @@ export const data: Dog[] = [
   },
   {
     name: "Woody",
-    address: "Bercylaan 99",
+    address: "Conny Stuartstraat 48",
     collarSize: CollarSize.SMALL,
   },
   {
@@ -642,6 +650,7 @@ export const data: Dog[] = [
   {
     name: "Bela & Mila",
     address: "Uilenburgerwerf 6",
+    collarSize: CollarSize.SMALL,
   },
   {
     name: "Gimli",
@@ -713,6 +722,258 @@ export const data: Dog[] = [
     address: "Zwanebloemlaan 66",
     breed: "Jack Russel",
   },
+  {
+    name: "Lola R",
+    address: "Elstarstraat 3",
+  },
+  {
+    name: "Kimi",
+    address: "Schokkerjachtdijk 3",
+  },
+  {
+    name: "Pep",
+    address: "Zwanebloemlaan 101",
+  },
+  {
+    name: "Dora",
+    address: "Hellingbaan 220",
+  },
+  {
+    name: "Pita",
+    address: "Elstarstraat 39",
+  },
+  {
+    name: "Nyla",
+    address: "Schooltuinpad 35",
+  },
+  {
+    name: "Mila",
+    address: "Boterbloemstraat 19",
+  },
+  {
+    name: "Oscar",
+    address: "Spadinalaan 424",
+  },
+  {
+    name: "Nio",
+    address: "Hammerbystraat 234",
+  },
+  {
+    name: "Bjork",
+    address: "NDSM-straat 107",
+  },
+  {
+    name: "Pepper L",
+    address: "Distelweg 303",
+  },
+  {
+    name: "Rosie B",
+    address: "Badhuiskade 109",
+  },
+  {
+    name: "Movi",
+    address: "Landsmeerderdijk 7",
+  },
+  {
+    name: "Tuga",
+    address: "Boomgaardlaan 118",
+  },
+  {
+    name: "Mo",
+    address: "Ceramiquelaan 317",
+  },
+  {
+    name: "Clara",
+    address: "Sausalitolaan 242",
+  },
+  {
+    name: "Lambert 1",
+    address: "Buiten Kadijken 6",
+    collarSize: CollarSize.LARGE,
+  },
+  {
+    name: "Bobbie L",
+    address: "Oostenburgervoorstraat 35",
+    collarSize: CollarSize.MEDIUM,
+  },
+  {
+    name: "Pablo K (harness) ⚠️",
+    address: "Willem Parelstraat 386 (Maps is wrong)",
+    collarSize: CollarSize.TINY,
+  },
+  {
+    name: "Loup ⚠️",
+    address: "Javakade 746",
+    collarSize: CollarSize.SMALL,
+  },
+  {
+    name: "Luca",
+    address: "Oostelijke handelskade 62-1",
+    collarSize: CollarSize.SMALL,
+  },
+  {
+    name: "Fien & Kalle (harness)",
+    address: "Stuurmankade 202",
+    collarSize: CollarSize.SMALL,
+  },
+  {
+    name: "Job (2314)",
+    address: "Ertskade 254",
+    collarSize: CollarSize.TINY,
+  },
+  {
+    name: "Ben",
+    address: "Wijttenbachstraat 50A",
+    collarSize: CollarSize.MEDIUM,
+  },
+  {
+    name: "Timo 2",
+    address: "Linnaeusstraat 42B",
+    collarSize: CollarSize.TINY,
+  },
+  {
+    name: "Maggie",
+    address: "Berkelstraat 5D",
+    collarSize: CollarSize.SMALL,
+  },
+  {
+    name: "Charlie T ⚠️ (harness + tracker)",
+    address: "Waalstraat 6HS",
+    collarSize: CollarSize.TINY,
+  },
+  {
+    name: "Sasha",
+    address: "Victorieplein 47-10",
+    collarSize: CollarSize.LARGE,
+  },
+  {
+    name: "Dax",
+    address: "Zuidelijke Wandelweg 169",
+    collarSize: CollarSize.MEDIUM,
+  },
+  {
+    name: "Sammy F",
+    address: "Stadhouderskade 151-1",
+    areaColour: "GREEN",
+  },
+  {
+    name: "Marley S",
+    address: "Eerste Van der Heijdenstraat 33b",
+  },
+  {
+    name: "Dib",
+    address: "Frans van Mierisstraat 24HS",
+  },
+  {
+    name: "Philly & Toet 2",
+    address: "Valeriusplein 28H",
+  },
+  {
+    name: "Bobbie D",
+    address: "Schuberstraat 4",
+  },
+  {
+    name: "Kees",
+    address: "Watteaustraat 24",
+  },
+  {
+    name: "Ollie C",
+    address: "Plantage Westermanlaan 1",
+  },
+  {
+    name: "Storm A",
+    address: "Plantage muidergracht 97C2",
+  },
+  {
+    name: "Ben",
+    address: "Wijttenbachstraat 50A",
+  },
+  {
+    name: "Kees B",
+    address: "Platanenweg 14-2",
+  },
+  {
+    name: "CocoH",
+    address: "Sarphatistraat 43A",
+  },
+  {
+    name: "Memphis",
+    address: "Daniël Stalpertstraat 26",
+  },
+  {
+    name: "Harry",
+    address: "Rooseveltlaan 98-2",
+  },
+  {
+    name: "Maggie",
+    address: "Berkelstraat 5D",
+  },
+  {
+    name: "Butch",
+    address: "Corellistraat 20",
+  },
+  {
+    name: "Betsie",
+    address: "Corellistraat 4",
+  },
+  {
+    name: "Jackie",
+    address: "George Gershwinlaan 81B",
+  },
+  {
+    name: "Lana",
+    address: "George Gershwinlaan 64",
+  },
+  {
+    name: "Lola L",
+    address: "Zocherstraat 37",
+  },
+  {
+    name: "Chef",
+    address: "Tweede Constantijn Huygensstraat 73h",
+  },
+  {
+    name: "Willis",
+    address: "Overtoom 282-2",
+  },
+  {
+    name: "Sonic",
+    address: "Vrolikstraat 429a",
+  },
+  {
+    name: "Georges",
+    address: "Van Eeghenstraat 212",
+  },
+  {
+    name: "Milo M",
+    address: "Veerstraat 12-3",
+  },
+  {
+    name: "Sjors S",
+    address: "Poeldijkstraat 385",
+  },
+  {
+    name: "Louie G",
+    address: "Ottho Heldringstraat 3D16",
+  },
+  {
+    name: "Mina",
+    address: "Emmy Andriessestraat 306",
+  },
+  {
+    name: "Bobbie J",
+    address: "Zeeburgerkade 746",
+  },
+  {
+    name: "Theo & Herbert *",
+    address: "Zonneplein 18b",
+  },
+  { name: "Lasse", address: "Hoopende Swaen 36" },
+  { name: "Finn", address: "Haringbuisdijk 635" },
+  { name: "Bliksem", address: "Nicolaas Hennemanhof 1" },
+  { name: "Mies", address: "Kadoelenweg 141" },
+  { name: "Kaat S", address: "Edmond Halleylaan 26C" },
+  { name: "Suki", address: "Groetstraat 142" },
 ]
   .map((item) => ({ ...item, id: uniqueId("dog_") }))
   .sort((a, b) => a.name.localeCompare(b.name));
