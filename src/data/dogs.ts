@@ -362,7 +362,7 @@ export const data: Dog[] = [
   },
   {
     name: "Rifka",
-    address: "Hellingbaan 296",
+    address: "Leen De Jongewaardkade 123",
     collarSize: CollarSize.MEDIUM,
   },
   {
@@ -974,6 +974,18 @@ export const data: Dog[] = [
   { name: "Mies", address: "Kadoelenweg 141" },
   { name: "Kaat S", address: "Edmond Halleylaan 26C" },
   { name: "Suki", address: "Groetstraat 142" },
+  { name: "Joffi", address: "Nieuwe Uilenburgerstraat 7D" },
+  { name: "Lincoln & Clementine", address: "Oudeschans 100" },
+  { name: "Jack W", address: "Oosterburgervoorstraat 63A" },
+  { name: "Dexter S", address: "Flevoparkweg 84" },
+  { name: "Loutje", address: "Krijn Taconiskade 503" },
+  { name: "Bowie", address: "Hoopende Swaen 14" },
+  { name: "Toon", address: "Elzenhagensingel 111" },
+  { name: "Oreo", address: "Haringbuisdijk 873" },
+  { name: "Jimi", address: "Talbotstraat 8" },
+  { name: "Jack L", address: "Zwanebloemlaan 186" },
+  { name: "Murphy", address: "Landsmeerderdijk 34" },
+  { name: "Benito", address: "Nico Jessekade 147" },
 ]
   .map((item) => ({ ...item, id: uniqueId("dog_") }))
   .sort((a, b) => a.name.localeCompare(b.name));
