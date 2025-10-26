@@ -986,6 +986,11 @@ export const data: Dog[] = [
   { name: "Jack L", address: "Zwanebloemlaan 186" },
   { name: "Murphy", address: "Landsmeerderdijk 34" },
   { name: "Benito", address: "Nico Jessekade 147" },
+  { name: "Totti", address: "Ceramiquelaan 419" },
+  { name: "Marley D", address: "Ilperveldstraat 41" },
+  { name: "Fief", address: "Leen de Jongewaardkade 83" },
+  { name: "Izumi", address: "Leen jongewaardkade 57" },
+  { name: "Dibbes", address: "Spadinalaan 567" },
 ]
   .map((item) => ({ ...item, id: uniqueId("dog_") }))
   .sort((a, b) => a.name.localeCompare(b.name));
